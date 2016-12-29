@@ -1,0 +1,19 @@
+# maven
+target/
+
+# eclipse
+.settings/
+.project
+.classpath
+
+# temp
+*.log
+*.cache
+*.diff
+*.patch
+*.tmp
+
+# system
+*.swp
+.DS_Store
+Thumbs.db
