@@ -1,10 +1,28 @@
 # maven
 target/
+!.mvn/wrapper/maven-wrapper.jar
 
-# eclipse
+# STS
 .settings/
-.project
 .classpath
+.project
+.apt_generated
+.factorypath
+.springBeans
+
+# IntelliJ IDEA
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# NetBeans
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
 
 # temp
 *.log
@@ -12,8 +30,10 @@ target/
 *.diff
 *.patch
 *.tmp
+*.bak
 
 # system
 *.swp
 .DS_Store
 Thumbs.db
+
