@@ -24,7 +24,7 @@ dist/
 nbdist/
 .nb-gradle/
 
-# temp
+# temp ignore
 *.log
 *.cache
 *.diff
@@ -32,8 +32,13 @@ nbdist/
 *.tmp
 *.bak
 
-# system
+# system ignore
 *.swp
 .DS_Store
 Thumbs.db
 
+# svn ignore
+.svn
+
+# plugin
+rebel.xml
