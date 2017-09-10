@@ -1,111 +1,111 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.itith.common</groupId>
-	<artifactId>common-base</artifactId>
-	<version>1.0.1-SNAPSHOT</version>
-	<packaging>pom</packaging>
-	<name>common-base</name>
-	<description>itith common base</description>
-	<url>https://github.com/huikai8673/itith-common</url>
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.itith.common</groupId>
+    <artifactId>common-base</artifactId>
+    <version>1.0.1-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <name>common-base</name>
+    <description>itith common base</description>
+    <url>https://github.com/huikai8673/itith-common</url>
 
-	<properties>
-		<java.version>1.8</java.version>
-		<maven.compiler.source>${java.version}</maven.compiler.source>
-		<maven.compiler.target>${java.version}</maven.compiler.target>
-		<maven.compiler.compilerVersion>${java.version}</maven.compiler.compilerVersion>
-		<!-- 文件拷贝时的编码 -->
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<project.reporting.outputEncoding>${project.build.sourceEncoding}</project.reporting.outputEncoding>
-		<!-- 编译时的编码 -->
-		<maven.compiler.encoding>${project.build.sourceEncoding}</maven.compiler.encoding>
-		<argLine>-Dfile.encoding=${project.build.sourceEncoding}</argLine>
-	</properties>
+    <properties>
+        <java.version>1.8</java.version>
+        <maven.compiler.source>${java.version}</maven.compiler.source>
+        <maven.compiler.target>${java.version}</maven.compiler.target>
+        <maven.compiler.compilerVersion>${java.version}</maven.compiler.compilerVersion>
+        <!-- 文件拷贝时的编码 -->
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>${project.build.sourceEncoding}</project.reporting.outputEncoding>
+        <!-- 编译时的编码 -->
+        <maven.compiler.encoding>${project.build.sourceEncoding}</maven.compiler.encoding>
+        <argLine>-Dfile.encoding=${project.build.sourceEncoding}</argLine>
+    </properties>
 
-	<licenses>
-		<license>
-			<name>The Apache License, Version 2.0</name>
-			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
-		</license>
-	</licenses>
+    <licenses>
+        <license>
+            <name>The Apache License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+        </license>
+    </licenses>
 
-	<scm>
-		<connection>scm:git:https://github.com/huikai8673/itith-common.git</connection>
-		<developerConnection>scm:git:https://github.com/huikai8673/itith-common.git</developerConnection>
-		<url>https://github.com/huikai8673/itith-common</url>
-	</scm>
+    <scm>
+        <connection>scm:git:https://github.com/huikai8673/itith-common.git</connection>
+        <developerConnection>scm:git:https://github.com/huikai8673/itith-common.git</developerConnection>
+        <url>https://github.com/huikai8673/itith-common</url>
+    </scm>
 
-	<developers>
-		<developer>
-			<id>huikai</id>
-			<email>huikai@itith.com</email>
-			<name>HuiKai</name>
-			<timezone>+8</timezone>
-		</developer>
-	</developers>
+    <developers>
+        <developer>
+            <id>huikai</id>
+            <email>huikai@itith.com</email>
+            <name>HuiKai</name>
+            <timezone>+8</timezone>
+        </developer>
+    </developers>
 
-	<distributionManagement>
-		<!-- Repository for snapshots -->
-		<snapshotRepository>
-			<id>sonatype-nexus</id>
-			<name>Nexus Snapshot Repository</name>
-			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
-		</snapshotRepository>
-		<!-- Repository for releases -->
-		<repository>
-			<id>sonatype-nexus</id>
-			<name>Nexus Release Repository</name>
-			<url>https://oss.sonatype.org/service/local/staging/deploy/maven2</url>
-		</repository>
-	</distributionManagement>
+    <distributionManagement>
+        <!-- Repository for snapshots -->
+        <snapshotRepository>
+            <id>sonatype-nexus</id>
+            <name>Nexus Snapshot Repository</name>
+            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+        </snapshotRepository>
+        <!-- Repository for releases -->
+        <repository>
+            <id>sonatype-nexus</id>
+            <name>Nexus Release Repository</name>
+            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2</url>
+        </repository>
+    </distributionManagement>
 
-	<profiles>
-		<profile>
-			<id>release</id>
-			<build>
-				<plugins>
-					<plugin>
-						<groupId>org.apache.maven.plugins</groupId>
-						<artifactId>maven-source-plugin</artifactId>
-						<version>2.2.1</version>
-						<executions>
-							<execution>
-								<id>attach-sources</id>
-								<goals>
-									<goal>jar-no-fork</goal>
-								</goals>
-							</execution>
-						</executions>
-					</plugin>
-					<plugin>
-						<groupId>org.apache.maven.plugins</groupId>
-						<artifactId>maven-javadoc-plugin</artifactId>
-						<version>2.9.1</version>
-						<executions>
-							<execution>
-								<id>attach-javadocs</id>
-								<goals>
-									<goal>jar</goal>
-								</goals>
-							</execution>
-						</executions>
-					</plugin>
-					<plugin>
-						<groupId>org.apache.maven.plugins</groupId>
-						<artifactId>maven-gpg-plugin</artifactId>
-						<version>1.5</version>
-						<executions>
-							<execution>
-								<id>sign-artifacts</id>
-								<phase>verify</phase>
-								<goals>
-									<goal>sign</goal>
-								</goals>
-							</execution>
-						</executions>
-					</plugin>
-				</plugins>
-			</build>
-		</profile>
-	</profiles>
+    <profiles>
+        <profile>
+            <id>release</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-source-plugin</artifactId>
+                        <version>2.2.1</version>
+                        <executions>
+                            <execution>
+                                <id>attach-sources</id>
+                                <goals>
+                                    <goal>jar-no-fork</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-javadoc-plugin</artifactId>
+                        <version>2.9.1</version>
+                        <executions>
+                            <execution>
+                                <id>attach-javadocs</id>
+                                <goals>
+                                    <goal>jar</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-gpg-plugin</artifactId>
+                        <version>1.5</version>
+                        <executions>
+                            <execution>
+                                <id>sign-artifacts</id>
+                                <phase>verify</phase>
+                                <goals>
+                                    <goal>sign</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
 </project>
