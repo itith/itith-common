@@ -7,7 +7,7 @@
     <packaging>pom</packaging>
     <name>common-base</name>
     <description>itith common base</description>
-    <url>https://github.com/huikai8673/itith-common</url>
+    <url>https://github.com/itith/itith-common</url>
 
     <properties>
         <java.version>1.8</java.version>
@@ -30,9 +30,9 @@
     </licenses>
 
     <scm>
-        <connection>scm:git:https://github.com/huikai8673/itith-common.git</connection>
-        <developerConnection>scm:git:https://github.com/huikai8673/itith-common.git</developerConnection>
-        <url>https://github.com/huikai8673/itith-common</url>
+        <connection>scm:git:https://github.com/itith/itith-common.git</connection>
+        <developerConnection>scm:git:https://github.com/itith/itith-common.git</developerConnection>
+        <url>https://github.com/itith/itith-common</url>
     </scm>
 
     <developers>
