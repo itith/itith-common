@@ -2,7 +2,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.itith.common</groupId>
     <artifactId>common-base</artifactId>
-    <version>1.1.0</version>
+    <version>1.1.1-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>Common Base</name>
     <description>itith common base</description>
@@ -33,7 +33,7 @@
         <connection>scm:git:https://github.com/itith/itith-common.git</connection>
         <developerConnection>scm:git:https://github.com/itith/itith-common.git</developerConnection>
         <url>https://github.com/itith/itith-common</url>
-        <tag>common-base-1.1.0</tag>
+        <tag>HEAD</tag>
     </scm>
 
     <organization>
