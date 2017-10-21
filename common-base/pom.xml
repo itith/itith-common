@@ -3,11 +3,12 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.itith.common</groupId>
     <artifactId>common-base</artifactId>
-    <version>1.0.1</version>
+    <version>1.0.2</version>
     <packaging>pom</packaging>
-    <name>common-base</name>
+    <name>Common Base</name>
     <description>itith common base</description>
     <url>https://github.com/itith/itith-common</url>
+    <inceptionYear>2017</inceptionYear>
 
     <properties>
         <java.version>1.8</java.version>
@@ -35,11 +36,16 @@
         <url>https://github.com/itith/itith-common</url>
     </scm>
 
+    <organization>
+        <name>Itith</name>
+        <url>http://www.itith.com</url>
+    </organization>
+
     <developers>
         <developer>
             <id>huikai</id>
-            <email>huikai@itith.com</email>
             <name>HuiKai</name>
+            <email>huikai@itith.com</email>
             <timezone>+8</timezone>
         </developer>
     </developers>
